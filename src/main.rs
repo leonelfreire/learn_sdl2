@@ -1,5 +1,3 @@
-use std::collections::HashMap;
-
 use learn_sdl2::{game_window::GameWindow, resource::TextureManager};
 use sdl2::{event::Event, image, keyboard::Keycode};
 
@@ -14,10 +12,6 @@ fn main() {
         .position_centered()
         .build()
         .unwrap();
-
-        let mut h = HashMap::new();
-        h.insert(String::from("leonel"), 10);
-        h.get("leonel");
 
     let canvas = window.into_canvas().build().unwrap();
     let texture_creator = canvas.texture_creator();
